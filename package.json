@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/syuumaimikan/Viewer#readme",
   "dependencies": {
-    "config": "^3.3.12"
+    "config": "^3.3.12",
+    "electron": "^36.1.0"
   }
 }
