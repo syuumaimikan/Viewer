@@ -1,5 +1,17 @@
-const config = require("config");
+const { app, BrowserWindow } = require("electron");
 
-const id = config.get("id.star_rail");
+const createWindow = () => {
+  const mainWindow = new BrowserWindow({
+    width: 600,
+    height: 400,
+    title: "マイアプリ",
+  });
 
-console.log(`${id}`);
+  mainWindow.loadFile("./src/index.html");
+};
+
+app.once("ready", () => {
+  createWindow();
+});
+
+app.once("window-all-closed", () => app.quit());
