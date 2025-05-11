@@ -1,0 +1,46 @@
+body {
+  font-family: sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 20px;
+}
+.profile {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 10px #ccc;
+  margin-bottom: 20px;
+}
+.profile img {
+  width: 96px;
+  height: 96px;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+.profile-details h2 {
+  margin: 0;
+}
+.character-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.character-card img.icon {
+  width: 80px;
+  height: 80px;
+}
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 10px;
+  margin-top: 10px;
+}
+.skill {
+  background: #f0f0ff;
+  padding: 10px;
+  border-radius: 8px;
+}
